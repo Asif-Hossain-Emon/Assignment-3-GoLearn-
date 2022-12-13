@@ -10,6 +10,8 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
@@ -18,12 +20,12 @@
   </head>
   <body class="max-w-[1320px] mx-auto md:mx-10 lg:mx-auto w-md">
     <!-- Navbar -->
-    <Navbar class="flex justify-between my-8">
-      <!-- Headline -->
+    <!-- <Navbar class="flex justify-between my-8">
+     
       <div>
         <p class="text-4xl font-semibold">GoLearning</p>
       </div>
-      <!-- Nav Item -->
+     
       <div class="flex md:hidden items-center text-lg font-normal">
         <div><button class="mx-7">Home</button></div>
         <div><button class="mx-7">Courses</button></div>
@@ -40,7 +42,26 @@
           Register
         </button>
       </div>
-    </Navbar>
+    </Navbar> -->
+
+    <!-- 2nd -->
+
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">GoLearning</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Success</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+    </nav>   
+
     <!-- Banner -->
    
      
@@ -633,6 +654,8 @@
       </div>
     </section>
 
+    
+ 
     <!-- Companies -->
     <section class="hidden lg:block ">
       <p class="font-semibold text-5xl mt-24 mb-10 text-center">
