@@ -14,39 +14,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>GoLearning</title>
   </head>
   <body class="max-w-[1320px] mx-auto md:mx-10 lg:mx-auto w-md">
-    <!-- Navbar -->
-    <!-- <Navbar class="flex justify-between my-8">
-     
-      <div>
-        <p class="text-4xl font-semibold">GoLearning</p>
-      </div>
-     
-      <div class="flex md:hidden items-center text-lg font-normal">
-        <div><button class="mx-7">Home</button></div>
-        <div><button class="mx-7">Courses</button></div>
-        <div><button class="mx-7">Deals</button></div>
-        <div><button class="mx-7">Success</button></div>
-        <div><button class="mx-7">About</button></div>
-        <div><button class="mx-7">Register</button></div>
-      </div>
-      <div>
-        <button
-          type="button"
-          class="px-8 py-3 font-semibold border rounded border-sky-600 text-sky-600"
-        >
-          Register
-        </button>
-      </div>
-    </Navbar> -->
+    
 
-    <!-- 2nd -->
-
-    <nav>
+    <!-- <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
@@ -60,94 +36,117 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Register</a></li>
       </ul>
-    </nav>   
+    </nav>    -->
+
+    <Navbar class="flex justify-between my-8">
+     
+      <div>
+        <p class="text-4xl font-semibold">GoLearning</p>
+      </div>
+     
+      <div class="hidden lg:flex  items-center text-lg font-normal">
+        <div><button class="mx-7">Home</button></div>
+        <div><button class="mx-7">Courses</button></div>
+        <div><button class="mx-7">Deals</button></div>
+        <div><button class="mx-7">Success</button></div>
+        <div><button class="mx-7">About</button></div>
+        <div><button class="mx-7">Register</button></div>
+      </div>
+      <div class="hidden lg:block">
+        <button
+          type="button"
+          class="px-8 py-3 font-semibold border rounded border-sky-600 text-sky-600"
+        >
+          Register
+        </button>
+      </div>
+
+<!-- Dropdown -->
+
+<div class=" lg:hidden sticky">
+  <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Menu <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+  <!-- Dropdown menu -->
+  <div id="dropdown" class="hidden z-10 w-44  rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+      <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+        <li>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+        </li>
+      </ul>
+  </div>
+</div>
+
+    </Navbar>
 
     <!-- Banner -->
    
-     
-    <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
-      <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner relative w-full overflow-hidden">
-        <div class="carousel-item active relative float-left w-full brightness-50 lg:max-h-[700px]"
-        
-        >
-          <img
-            src="images/cover/cover-1.png"
-            class="block w-full"
-            alt="..."
+    <!-- New -->
+    <div id="animation-carousel" class="relative" data-carousel="static">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+           <!-- Item 1 -->
+          <div class="hidden static duration-200 ease-linear " data-carousel-item>
+              <img src="/images/cover/cover-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50" alt="...">
+               <p class="absolute w-full py-2.5 bottom-0 inset-x-0 top-20 md:top-44 lg:top-40 text-semibold text-white text-6xl text-center leading-4">Learn Without Limits</p>
+               <p class="absolute w-full py-2.5 bottom-0 inset-x-0 top-[120px] md:top-56 lg:top-56 text-semibold text-white text-lg text-center leading-4">Start, switch, or advance your career with more than 5,400 courses,<br/> Professional Certificates, and<br/> degrees from world-class universities and companies.</p>
+               <button
+                type="button"
+                class=" absolute mb-0 md:mb-6 py-3.5 bottom-0 inset-x-60 lg:inset-x-96  text-semibold lg:top-80 text-white text-3xl text-center leading-4 rounded bg-sky-600 text-white"
+              >
+                Get Started
+              </button>
            
-          />
-          <div class="carousel-caption  align-middle hidden md:block absolute text-center ">
-            <h5 class="text-xl text-white ">Learn Without Limits</h5>
-            <p>Start, switch, or advance your career with more than 5,400 courses,<br/> Professional Certificates, and<br/> degrees from world-class universities and companies.</p>
+            </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-200 ease-linear " data-carousel-item>
+              <img src="/images/cover/cover-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50" alt="...">
+              <p class="absolute w-full py-2.5 bottom-0 inset-x-0 top-20 md:top-44 lg:top-40 text-semibold text-white text-6xl text-center leading-4">Learn Without Limits</p>
+               <p class="absolute w-full py-2.5 bottom-0 inset-x-0 top-[120px] md:top-56 lg:top-56 text-semibold text-white text-lg text-center leading-4">Start, switch, or advance your career with more than 5,400 courses,<br/> Professional Certificates, and<br/> degrees from world-class universities and companies.</p>
+               <button
+                type="button"
+                class=" absolute mb-0 md:mb-6 py-3.5 bottom-0 inset-x-60 lg:inset-x-96  text-semibold text-white text-3xl text-center leading-4 rounded bg-sky-600 text-white"
+              >
+                Get Started
+              </button>
           </div>
-        </div>
-        <div class="carousel-item relative float-left w-full brightness-50 md:max-h-[400px] lg:max-h-[700px]">
-          <img
-            src="images/cover/cover-2.jpg"
-            class="block w-full"
-            alt="..."
-          />
-          <div class="carousel-caption hidden md:block absolute text-center">
-            <h5 class="text-xl">Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+          <!-- Item 3 -->
+          <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+              <img src="/images/cover/cover-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50" alt="...">
+              <p class="absolute w-full py-2.5 bottom-0 inset-x-0 top-20 md:top-44 lg:top-40 text-semibold text-white text-6xl text-center leading-4">Learn Without Limits</p>
+               <p class="absolute w-full py-2.5 bottom-0 inset-x-0 top-[120px] md:top-56 lg:top-56 text-semibold text-white text-lg text-center leading-4">Start, switch, or advance your career with more than 5,400 courses,<br/> Professional Certificates, and<br/> degrees from world-class universities and companies.</p>
+               <button
+                type="button"
+                class=" absolute mb-0 md:mb-6 py-3.5 bottom-0 inset-x-60 lg:inset-x-96  text-semibold text-white text-3xl text-center leading-4 rounded bg-sky-600 text-white"
+              >
+                Get Started
+              </button>
           </div>
-        </div>
-        <div class="carousel-item relative float-left w-full brightness-50 lg:max-h-[700px]">
-          <img
-            src="images/cover/cover-3.jpg"
-            class="block w-full"
-            alt="..."
-          />
-          <div class="carousel-caption hidden md:block absolute text-center">
-            <h5 class="text-xl">Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
+          
       </div>
-      <button
-        class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+              <span class="sr-only">Previous</span>
+          </span>
       </button>
-      <button
-        class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+      <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              <span class="sr-only">Next</span>
+          </span>
       </button>
     </div>
-   
+
     
-   
     <div class="mt-14">
       <p class="font-semibold text-5xl text-center">
         Discover Our Popular <br />
@@ -315,12 +314,18 @@
             </p>
           </div>
 
-          <a
-            href="#"
-            rel="noreferrer noopener"
-            class="px-5 mt-4 lg:mt-0 py-3 rounded-md border block bg-white text-sky-500 font-semibold"
-            >Register Now</a
-          >
+          <!-- The button to open modal -->
+<a href="#my-modal-2" class="btn">open modal</a>
+
+<div class="modal" id="my-modal-2">
+  <div class="modal-box">
+    <h3 class="font-bold text-4xl text-black">Register Now!</h3>
+    <p class="py-4 text-black text-lg">If you want to enroll any course you have to register first. <br/>So, don't wait. <br/> Register now.</p>
+    <div class="modal-action">
+     <a href="" class="btn">Ok!</a>
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </div>
@@ -495,6 +500,31 @@
         </div>
       </div>
     </section>
+
+    <!-- Dropdown -->
+
+    <div class="sticky">
+      <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown button <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+      <!-- Dropdown menu -->
+      <div id="dropdown" class="hidden z-10 w-44  rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+          <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+            <li>
+              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+
 
     <!-- FAQ -->
 
@@ -671,12 +701,18 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    
+
+
+
+    
 
     
    
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
   </body>
+
   <footer class="footer footer-center pt-10  bg-black text-white">
     <div>
       
