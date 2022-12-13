@@ -61,34 +61,202 @@
         </button>
       </div>
 
+      <!-- dropdown -->
+
+      <div class="flex justify-center block lg:hidden">
+        <div>
+          <div class="dropdown relative">
+            <a
+              class="
+                dropdown-toggle
+                px-6
+                py-2.5
+                bg-blue-600
+                text-white
+                font-medium
+                text-xl
+                leading-tight
+                uppercase
+                rounded
+                shadow-xl
+                hover:bg-blue-700 hover:shadow-lg
+                focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                active:bg-blue-800 active:shadow-lg active:text-white
+                transition
+                duration-150
+                ease-in-out
+                flex
+                items-center
+                whitespace-nowrap
+              "
+              href="#"
+              type="button"
+              id="dropdownMenuButton2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Menu
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="caret-down"
+                class="w-2 ml-2"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                ></path>
+              </svg>
+            </a>
+            <ul
+              class="
+                dropdown-menu
+                min-w-max
+                absolute
+                hidden
+                bg-white
+                text-base
+                z-50
+                float-left
+                py-2
+                list-none
+                text-left
+                rounded-lg
+                shadow-lg
+                mt-1
+                hidden
+                m-0
+                bg-clip-padding
+                border-none
+              "
+              aria-labelledby="dropdownMenuButton2"
+            >
+              <li>
+                <a
+                  class="
+                    dropdown-item
+                    text-lg
+                    py-2
+                    px-8
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-transparent
+                    text-gray-700
+                    hover:bg-gray-100
+                  "
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="
+                    dropdown-item
+                    text-lg
+                    py-2
+                    px-8
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-transparent
+                    text-gray-700
+                    hover:bg-gray-100
+                  "
+                  href="#"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a
+                  class="
+                    dropdown-item
+                    text-lg
+                    py-2
+                    px-8
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-transparent
+                    text-gray-700
+                    hover:bg-gray-100
+                  "
+                  href="#"
+                  >Deals</a
+                >
+              </li>
+              <li>
+                <a
+                  class="
+                    dropdown-item
+                    text-lg
+                    py-2
+                    px-8
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-transparent
+                    text-gray-700
+                    hover:bg-gray-100
+                  "
+                  href="#"
+                  >Success</a
+                >
+              </li>
+              <li>
+                <a
+                  class="
+                    dropdown-item
+                    text-lg
+                    py-2
+                    px-8
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-transparent
+                    text-gray-700
+                    hover:bg-gray-100
+                  "
+                  href="#"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="
+                    dropdown-item
+                    text-lg
+                    py-2
+                    px-8
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-transparent
+                    text-gray-700
+                    hover:bg-gray-100
+                  "
+                  href="#"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
 <!-- Dropdown -->
 
-<div class="block lg:hidden">
-  <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Menu <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-  <!-- Dropdown menu -->
-  <div id="dropdown" class="hidden z-10 w-44  rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-      <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
-        <li>
-          <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Courses</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Deals</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Success</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Register</a>
-        </li>
-      </ul>
-  </div>
-</div>
+
 
     </Navbar>
 
@@ -206,7 +374,7 @@
         </div>
       </div>
       <!-- course 4 -->
-      <div>
+      <div class="hidden lg:block">
         <div class="card md:card-side bg-base-100 shadow-xl">
           <figure>
             <img src="images/course/course-4.png" alt="Movie" />
@@ -219,7 +387,7 @@
         </div>
       </div>
       <!-- course 5 -->
-      <div>
+      <div class="hidden lg:block">
         <div class="card md:card-side bg-base-100 shadow-xl">
           <figure>
             <img src="images/course/course-5.png" alt="Movie" />
@@ -232,7 +400,7 @@
         </div>
       </div>
       <!-- course 6 -->
-      <div>
+      <div class="hidden lg:block">
         <div class="card md:card-side bg-base-100 shadow-xl">
           <figure>
             <img src="images/course/course-6.png" alt="Movie" />
@@ -308,20 +476,20 @@
     <div class="p-6 py-12 bg-sky-500 text-gray-50">
       <div class="container mx-auto">
         <div
-          class="flex flex-col lg:flex-row items-center justify-between px-8"
+          class="flex-none lg:flex lg:flex-row items-center justify-between px-8"
         >
-          <div>
-            <h2 class="text-5xl tracking-tighter font-semibold pb-10">
+          <div class="">
+            <h2 class="text-5xl tracking-tighter font-semibold pb-10 ml-36 lg:ml-0">
               Ready to Join
             </h2>
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the <br />readable content of a page when looking at its layout.
+            <p class="ml-24 lg:ml-0">
+              It is a long established fact that a reader will be distracted  <br /> by
+              the readable content of a page when looking at its layout.
             </p>
           </div>
 
           <!-- The button to open modal -->
-<a href="#my-modal-2" class="btn">Register Now!</a>
+<a href="#my-modal-2 " class="btn my-4 lg:my-0 flex justify-center lg:flex-none">Register Now!</a>
 
 <div class="modal" id="my-modal-2">
   <div class="modal-box">
@@ -336,7 +504,7 @@
       </div>
     </div>
     <!-- Meet Our Successful Students -->
-    <section class="my-32">
+    <div class="my-32">
       <p class="text-5xl font-semibold pb-5 text-center">
         Meet Our Successful<br />
         Students
@@ -385,7 +553,7 @@
           <p class="mb-5 pl-5">JS Developer</p>
         </div>
       </div>
-      <div class="flex justify-center">
+      <div class="block md:hidden lg:block flex justify-center lg:flex justify-center">
         <button
           type="button"
           class="px-8 py-3 mt-14 font-semibold rounded bg-sky-600 text-white"
@@ -393,9 +561,9 @@
           View all
         </button>
       </div>
-    </section>
+    </div>
     <!-- Students Feedback -->
-    <section class="mb-32">
+    <div class="pb-32 ">
       <p class="font-semibold text-5xl text-center mb-5">
         Some Students Feedback
       </p>
@@ -404,7 +572,7 @@
        give their valuable review here. 
       </p>
       <!-- Feedback -->
-      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-3">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
         <div class="border-2 p-10">
           <div class="flex justify-between">
             <figure>
@@ -505,36 +673,15 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Dropdown -->
-
-    <div class="sticky">
-      <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown button <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-      <!-- Dropdown menu -->
-      <div id="dropdown" class="hidden z-10 w-44  rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-          <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
-            <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-            </li>
-          </ul>
-      </div>
     </div>
+
+    
 
 
 
     <!-- FAQ -->
 
-    <section class="text-gray-800">
+    <div class=" text-gray-800">
       <div
         class="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8"
       >
@@ -688,12 +835,12 @@
           </details>
         </div>
       </div>
-    </section>
+    </div>
 
     
  
     <!-- Companies -->
-    <section class="hidden lg:block ">
+    <div class="hidden lg:block ">
       <p class="font-semibold text-5xl mt-24 mb-10 text-center">
         Trusted by over 800+ companies
       </p>
@@ -705,7 +852,7 @@
         <img src="/images/company/company-5.png" alt="" />
         <img src="/images/company/company-6.png" alt="" />
       </div>
-    </section>
+    </div>
 
     
 
